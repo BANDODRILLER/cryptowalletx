@@ -41,6 +41,7 @@ Route::get('cancelfixaccount', [AdminController::class, 'cancelfixaccount'])->na
 Route::post('/contact', [HomePageController::class, 'sendEmail'])->name('contact.send');
 Route::get('/congratulations', [HomePageController::class, 'congratulations'])->name('congratulations');
 Route::post('/redeem', [HomePageController::class, 'redeem'])->name('redeem');
+Route::get('/activeusers', [AdminController::class, 'users'])->name('users');
 
 
 
